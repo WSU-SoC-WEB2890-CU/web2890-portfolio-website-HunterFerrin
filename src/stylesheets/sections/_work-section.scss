@@ -1,0 +1,63 @@
+@use '../custom' as *;
+
+.work-section {
+    background-color: $backCol;
+    color: $hoverCol;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    margin: auto;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.hunterPic {
+    margin: auto;
+    width: 50%;
+    border: solid 1px $hoverCol;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+}
+
+.contact-form {
+    padding-top: 3rem;
+    opacity: .8;
+
+    input {
+        width: 100%;
+        //margin: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .message, .subject {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .message {
+        resize: none;
+    }
+
+    .nav-button {
+        color: $hoverCol;
+        padding: .8rem;
+        background-color: transparent;
+        width: 20%;
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: 20px;
+        border: 3px solid $hoverCol;
+        font-size: 1.3rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .nav-button:hover {
+        color:  white;
+        border: 3px solid white;
+    }
+}

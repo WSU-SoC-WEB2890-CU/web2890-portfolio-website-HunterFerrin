@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Portfolio website ...">
+
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+  <!-- Your HTML goes here -->
+  <nav class="navbar navbar-expand-lg menu shadow fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="public/FerrinLogo.png" alt="Hunter Ferrin" id="headimg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbar-Nav" aria-expanded="false" aria-label="Toggle navigation"><h2><i class="bi bi-list"></i></h2>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutme.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="projectgallery.html" class="nav-link">Project Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Top Section-->
+<section class="top-section mt-4 shadow">
+    <div class="container">
+      <div class="background">
+          <div class="row">
+            <h1 class="text-center">Multiplayer Boggle Game</h1>
+            <h2 class="text-center">My Favorite Project</h2>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-section shadow">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>This project was for software engineering II. It was created in a group of 4. It required that it be able to be played by two people, connected to a database, have accounts, and used react.js</h3>
+                <h3>It was a very challenging project for the whole class. None of us had learned React yet so it required that we learn all we can outside of class. Getting the game logic set up and the individual logins working went by smoothly. Getting the two players to communicate was the challenging part.</h3>
+                <h3>Our solution was to use the database to create a lobby. Each move made by the player would be stored to the database. The game would check every 500ms for updates to the database and would update each players game accordingly.</h3>
+            </div>
+            <div class="col">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <h2>Hunter Ferrin</h2>
+          </div>
+          <div class="row">
+            <p>Front & Back-end Web Development, Mechanics, and Welding Portfolio</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <h3>Navigation</h3>
+          </div>
+          <div class="row">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="projectgallery.html">Project Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <h3>Contact Me</h3>
+          </div>
+          <div class="row">
+            <div class="row">
+              <h4>Email</h4>
+            </div>
+            <div class="row">
+              <p>hunterferrin117@gmail.com</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row">
+              <h4>Phone</h4>
+            </div>
+            <div class="row">
+              <p>801-388-8480</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="footer-bottom__copyright">
+              &copy; Hunter Ferrin 2023
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+
+</body>
+</html>
