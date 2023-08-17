@@ -24,6 +24,12 @@
     a:hover {
         color: $topText;
     }
+
+    h4 {
+        a {
+            color: $hoverCol;
+        }
+    }    
 }
 
 .hunterPic {
