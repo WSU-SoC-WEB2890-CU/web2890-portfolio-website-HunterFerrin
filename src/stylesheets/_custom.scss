@@ -1,0 +1,65 @@
+$main: #111217;
+$hoverCol: #FCCC14;
+$linkCol: #D8BB00;
+$backCol: #1A1D22;
+$navCol: #3C5774;
+$topText: #35363B;
+
+$primary: $main;
+
+nav {
+    background-color: $navCol;
+
+    .navbar-brand {
+        width: 50%;
+    }
+    img {
+        width: 12%;
+    }
+
+    .nav-link {
+        color: $linkCol;
+        font-size: 1.5rem;
+    }
+
+    .active {
+        color: $hoverCol;
+        text-decoration: underline;
+    }
+
+    .nav-link:hover {
+        color: $hoverCol;
+    }
+    
+    .navbar-toggler {
+        color: $hoverCol;
+     //   background-color: white;
+    }
+
+    .navbar-toggler-icon {
+        color: $hoverCol;
+    }
+    button {
+        color: $hoverCol;
+    }
+}
+
+footer {
+    background-color: $navCol;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $hoverCol;
+
+    li {
+        list-style: none;
+
+        a {
+            color: $hoverCol;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $linkCol;
+        }
+    }
+}
