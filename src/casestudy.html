@@ -53,10 +53,52 @@
   <section class="work-section shadow">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <h3>This project was for my capstone course. It was a tenure project for one of the professors. It would take data from two algorithms and compare memory usage, times, etc between the two. We did not have the c++ backend for the algorithms so we used dummy data and would return the info that was selected. We used mongoDB and react.js in this project.</h3>
+          <div class="col col-9">
+                <h2>Link to Clone: https://github.com/19terickson/AlgoGaugeCapstone.git</h2>
+          <br>
+                <h2>Some of my code snippets:</h2>
+                <div class="code-site m-auto">
+                  <code class="w-25">
+                    export function algoClick (e) {
+                      e.preventDefault();
+                      var elements = document.getElementsByClassName("structCom");
+                      for(var i = 0, length = elements.length; i &lt; length; i++) {
+                          elements[i].style.display = "none";
+                      } 
+                  
+                      var elements = document.getElementsByClassName("algoCom");
+                      for(var i = 0, length = elements.length; i &lt; length; i++) {
+                            elements[i].style.display = "block";
+                      }
+                  
+                      document.getElementById("catButton").textContent = "Algorithm"
+                  }
+                  </code>
+                </div>
+                  <br>
+                  <div class="code-site m-auto">
+                    <code>
+                      function Item({ userName, index, date }) {
+                        if (index + 1 == Number(queuePosition.position)) {
+                          return [
+                          &lt;h5 class="userSpot"&gt;#{index + 1} {userName}&lt;/h5&gt;,
+                          &lt;p&gt;Joined Queue At: {new Date(date).toLocaleString()}&lt;/p&gt;
+                          ];
+                        }
+                        return [
+                        &lt;h5&gt;#{index + 1} {userName}&lt;/h5&gt;,
+                        &lt;p&gt;Joined Queue At: {new Date(date).toLocaleString()}&lt;/p&gt;
+                        ];
+                      }
+                    </code>
+                  </div>
+                <br>
+
+                <h3>This project was for my capstone course. It was a tenure project for one of the professors. It would take data from two algorithms and compare memory usage, times, etc between the two. We did not have the C++ backend for the algorithms so we used dummy data and would return the info that was selected. We used mongoDB and react.js in this project.</h3>
+                <br>
+                <h3>I handled most of the CSS and layouts as well as the majority of the form controls and their handler functions.</h3>
             </div>
-            <div class="col">
+            <div class="col col-7 text-center">
                 <img class="w-100" src="/algo.gif" alt="">
             </div>
         </div>
