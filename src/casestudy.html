@@ -9,6 +9,10 @@
   <meta name="description" content="TODO: Portfolio website ...">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 
 <body>
@@ -58,39 +62,44 @@
           <br>
                 <h2>Some of my code snippets:</h2>
                 <div class="code-site m-auto">
-                  <code class="w-25">
-                    export function algoClick (e) {
-                      e.preventDefault();
-                      var elements = document.getElementsByClassName("structCom");
-                      for(var i = 0, length = elements.length; i &lt; length; i++) {
-                          elements[i].style.display = "none";
-                      } 
-                  
-                      var elements = document.getElementsByClassName("algoCom");
-                      for(var i = 0, length = elements.length; i &lt; length; i++) {
-                            elements[i].style.display = "block";
-                      }
-                  
-                      document.getElementById("catButton").textContent = "Algorithm"
-                  }
-                  </code>
+                  <pre>
+                    <code class="language-js">
+                      export function algoClick (e) {
+                        e.preventDefault();
+                        var elements = document.getElementsByClassName("structCom");
+                        for(var i = 0, length = elements.length; i &lt; length; i++) {
+                            elements[i].style.display = "none";
+                        } 
+                    
+                        var elements = document.getElementsByClassName("algoCom");
+                        for(var i = 0, length = elements.length; i &lt; length; i++) {
+                              elements[i].style.display = "block";
+                        }
+                    
+                        document.getElementById("catButton").textContent = "Algorithm"
+                    }
+                    </code>
+                  </pre>
                 </div>
                   <br>
                   <div class="code-site m-auto">
-                    <code>
-                      function Item({ userName, index, date }) {
-                        if (index + 1 == Number(queuePosition.position)) {
+                    <pre>
+
+                      <code class="language-js">
+                        function Item({ userName, index, date }) {
+                          if (index + 1 == Number(queuePosition.position)) {
+                            return [
+                            &lt;h5 class="userSpot"&gt;#{index + 1} {userName}&lt;/h5&gt;,
+                            &lt;p&gt;Joined Queue At: {new Date(date).toLocaleString()}&lt;/p&gt;
+                            ];
+                          }
                           return [
-                          &lt;h5 class="userSpot"&gt;#{index + 1} {userName}&lt;/h5&gt;,
+                          &lt;h5&gt;#{index + 1} {userName}&lt;/h5&gt;,
                           &lt;p&gt;Joined Queue At: {new Date(date).toLocaleString()}&lt;/p&gt;
                           ];
                         }
-                        return [
-                        &lt;h5&gt;#{index + 1} {userName}&lt;/h5&gt;,
-                        &lt;p&gt;Joined Queue At: {new Date(date).toLocaleString()}&lt;/p&gt;
-                        ];
-                      }
-                    </code>
+                      </code>
+                    </pre>
                   </div>
                 <br>
 
